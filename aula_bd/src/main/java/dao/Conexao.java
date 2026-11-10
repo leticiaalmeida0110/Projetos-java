@@ -11,7 +11,7 @@ public class Conexao {
 
     private static final String BANCO_DADOS = "aula_bd";
     private static final String LOGIN = "root";
-    private static final String SENHA = "Bancodedados123";
+    private static final String SENHA = "123456";
 
     private Conexao() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/" + BANCO_DADOS;

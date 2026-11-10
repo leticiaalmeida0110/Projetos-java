@@ -3,8 +3,8 @@ package testes;
 import java.time.LocalDate;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+//import jakarta.persistence.EntityManagerFactory;
+//import jakarta.persistence.Persistence;
 import model.Contato;
 import utils.JPAUtils;
 
@@ -19,7 +19,7 @@ public class Teste1 {
 		EntityManager em = JPAUtils.getEntityManager();
 		
 		//estado transiente
-		Contato contato = new Contato(null, "José","35712542", "josé2@gmail.com", LocalDate.of(1995, 07, 25));
+		Contato contato = new Contato(null, "José","35712542", "josé2@gmail.com", LocalDate.of(1995, 07, 25), null);
 			
 		//insert
 		em.getTransaction().begin();

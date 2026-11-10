@@ -13,7 +13,7 @@ public class TesteContato {
 		ContatoDao dao = new ContatoDao();
 		
 		LocalDate data = LocalDate.of(2001, 10, 15);
-		Contato cont = new Contato(null, "Ana", "99160-1234",
+		Contato cont = new Contato(null, "Ana nnnn", "99160-1234",
 				"ana@gmail.com", data);
 		
 		try {
