@@ -12,6 +12,8 @@
 		<class>model.Contato</class>
 		<class>model.Produto</class>
 		<class>model.Categoria</class>
+        <class>model.Aluno</class>
+
 				
 		
         <properties>
