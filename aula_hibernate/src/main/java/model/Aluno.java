@@ -47,7 +47,43 @@ public class Aluno {
     
     //@JoinColumn(name="id_categoria")
 	//private Categoria categoria;
+
+
+/* @Entity NA CLASSE CURSO
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Curso {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String nome;
+}*/ 
 	
+/*@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Aluno {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String nome;
+
+    private String matricula;
+
+    @ManyToOne
+    @JoinColumn(name = "id_curso")
+    private Curso curso; NA CLASSE ALUNO
+}*/
+
+
     /*Exercício prático – Gerenciamento de Alunos
 Nível iniciante
  Estilo prova
