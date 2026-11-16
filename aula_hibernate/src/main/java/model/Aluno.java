@@ -29,11 +29,15 @@ public class Aluno {
 	// gera chaves automaticamente
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String nome;
+
+	private String nome; // pode repetir
+
+    @Column(unique = true)
 	private String matricula;
 	
 	@Column(unique = true)
 	private String email;
+
 	private String curso;
 	
 	//@ManyToOne usaria se fosse usar um relacionamento de curso e aluno por exemplo
@@ -47,6 +51,15 @@ public class Aluno {
     /*Exercício prático – Gerenciamento de Alunos
 Nível iniciante
  Estilo prova
+
+banco de dados
+
+USE aula_hibernate;
+
+SELECT * FROM alunos; #ver todos os alunos
+SELECT * FROM alunos WHERE id = 1; #buscar pelo id
+SELECT * FROM alunos WHERE nome LIKE 'Pedro'; #buscar pelo nome
+SELECT * FROM alunos WHERE id = 1; #verificar alteração
 
 
 Enunciado:
