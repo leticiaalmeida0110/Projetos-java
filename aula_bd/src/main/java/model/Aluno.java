@@ -34,7 +34,7 @@ DELETE FROM aluno
 WHERE id_aluno = 2;
 
 ALTER TABLE aluno
-ADD CONSTRAINT uk_matricula UNIQUE (matricula_aluno);
+ADD CONSTRAINT uk_matricula UNIQUE (matricula_aluno);                                  
 */
 
 

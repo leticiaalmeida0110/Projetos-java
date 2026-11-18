@@ -1,0 +1,3 @@
+dao\AlunoDao.class
+model\Aluno.class
+testes\TesteAluno.class

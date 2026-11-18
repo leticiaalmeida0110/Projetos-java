@@ -36,4 +36,11 @@ public class Contato {
 	
 	@Column(name = "data_nasc")
 	private LocalDate dataNascimento;
+	
+	public Contato(DadosCadastroContato dados) {
+		this.nome = dados.nome();
+		this.celular = dados.celular();
+		this.email = dados.email();
+		this.dataNascimento = dados.dataNascimento();
+	}
 }
